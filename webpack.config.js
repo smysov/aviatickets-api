@@ -32,14 +32,6 @@ const plugins = () => {
 				collapseWhitespace: isProd,
 			},
 		}),
-		new CopyWebpackPlugin({
-			patterns: [
-				{
-					from: path.resolve(__dirname, 'src/assets/images'),
-					to: path.resolve(__dirname, 'dist/assets/images'),
-				},
-			],
-		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({
 			filename: filename('css'),
@@ -60,7 +52,7 @@ module.exports = {
 	context: path.resolve(__dirname, 'src'),
 	mode: 'development',
 	entry: {
-		main: ['@babel/polyfill', './index.js'],
+		main: ['@babel/polyfill', './scripts/index.js'],
 	},
 	output: {
 		filename: filename('js'),
