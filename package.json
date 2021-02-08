@@ -1,13 +1,13 @@
 {
-  "name": "aviatickets-api",
-  "version": "1.0.0",
-  "description": "booking air tickets",
-  "main": "index.js",
-  "repository": "git@github.com:smysov/aviatickets-api.git",
-  "author": "Sergey Mysov <s.mysov@list.ru>",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
+	"name": "aviatickets-api",
+	"version": "1.0.0",
+	"description": "booking air tickets",
+	"main": "index.js",
+	"repository": "git@github.com:smysov/aviatickets-api.git",
+	"author": "Sergey Mysov <s.mysov@list.ru>",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
 		"dev": "cross-env NODE_ENV=development webpack --mode development",
 		"build": "cross-env NODE_ENV=production webpack --mode production",
 		"watch": "cross-env NODE_ENV=development webpack --mode development --watch",
@@ -45,6 +45,7 @@
 	},
 	"dependencies": {
 		"@babel/polyfill": "^7.12.1",
+		"axios": "^0.21.1",
 		"normalize.css": "^8.0.1"
 	},
 	"browserslist": [
