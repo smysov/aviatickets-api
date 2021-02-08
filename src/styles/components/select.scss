@@ -1,0 +1,25 @@
+.input-field {
+  margin-bottom: 0;
+}
+
+.select-wrapper {
+  width: 120px;
+
+  & .select-dropdown {
+    font-weight: 700;
+    font-size: 18px !important;
+    color: #fff;
+  }
+
+  & .select-dropdown.dropdown-trigger {
+    border: none;
+
+    &:focus {
+      border: none;
+    }
+  }
+
+  & .caret {
+    fill: #fff;
+  }
+}

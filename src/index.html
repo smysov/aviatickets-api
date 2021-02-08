@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aviatickets</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo">
+          <i class="logo__icon small material-icons">flight_takeoff</i>
+          <a href="#" class="logo__text">AviaTickets</a>
+        </div>
+        <div class="input-field">
+          <select>
+            <option value="USD">$ US Dollar</option>
+            <option value="EUR">€ Euro</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-tickets">
+      <div class="container">
+        <div class="form-wrapper">
+          <form class="form search" name="search">
+            <h2 class="form__title">Order ticket</h2>
+            <div class="form__column">
+              <div class="form__row">
+                <div class="input-field">
+                  <input type="text" id="autocomplete-origin" class="autocomplete">
+                  <label class="form__label" for="autocomplete-origin">Origin</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="autocomplete-destination" class="autocomplete">
+                  <label class="form__label" for="autocomplete-destination">Destination</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" class="datepicker" id="datepicker-depart">
+                  <label class="form__label" for="datepicker-depart">Depart date</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" class="datepicker" id="datepicker-return">
+                  <label class="form__label" for="datepicker-return">Return date</label>
+                </div>
+                <div class="form__buttons">
+                  <button class="btn waves-effect waves-light purple darken-3" type="submit" name="action">Search
+                    <i class="material-icons right">search</i>
+                  </button>
+                  <button class="btn waves-effect waves-light pink darken-3" type="reset" name="action">Reset
+                    <i class="material-icons right">cancel</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>

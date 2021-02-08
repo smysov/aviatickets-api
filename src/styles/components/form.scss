@@ -1,0 +1,33 @@
+.form {
+  font-size: 18px;
+  color: #fff;
+  background-color: #6f017e;
+  padding: 20px;
+  box-shadow: 0 0 15px 0 #000;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  &__title {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  &__label {
+    color: #fff !important;
+    font-size: 18px !important;
+  }
+
+  & &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
