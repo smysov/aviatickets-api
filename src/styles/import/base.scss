@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-size: 20px;
+  min-width: 320px;
+  height: 100%;
+  min-height: 100%;
+  background: linear-gradient(to right, #a76cce, #853fd4, #7e2972);
+}
+
+section {
+  padding: 30px 0;
+}

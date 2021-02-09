@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  &__icon {
+    color: #fff;
+  }
+
+  &__text {
+    font-size: 28px;
+    color: #fff;
+    display: none;
+
+    @media (min-width: 400px) {
+      display: block;
+    }
+  }
+}
