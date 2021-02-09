@@ -1,4 +1,4 @@
-import 'materialize-css/sass/materialize.scss';
+import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
 
 //Init select
@@ -27,6 +27,7 @@ export function getAutocompleteInstance(element) {
 const datepickers = document.querySelectorAll('.datepicker');
 M.Datepicker.init(datepickers, {
 	showClearBtn: true,
+	format: 'yyyy-mm',
 });
 
 export function getDatepickerInstance(element) {

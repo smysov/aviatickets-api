@@ -1,3 +1,21 @@
+.datepicker {
+  color: #fff;
+}
+
+.datepicker-calendar-container {
+  background-color: #f0f0f0;
+}
+
 .datepicker-date-display {
-  background-color: rgb(111, 1, 126);
+  background-color: #6f017e;
+}
+
+.datepicker-day-button {
+  color: #6f017e;
+}
+
+.datepicker-controls .select-month input,
+.datepicker-controls .select-year input {
+  width: 100%;
+  color: #000;
 }
