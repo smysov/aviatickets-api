@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const origin = locations.getCityCodeByKey(formUI.originValue);
 		const destination = locations.getCityCodeByKey(formUI.destinationValue);
 		const depart_date = formUI.departDateValue;
-		const return_date = formUI.returnDateValue;
+		const return_date = formUI.returnDateValue || null;
 		const currency = currencyUI.currencyValue;
 
 		//Collect data in an object
