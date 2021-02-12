@@ -72,6 +72,7 @@ class TicketsUI {
             <span class="ticket__transfers">Пересадок: ${ticket.transfers}</span>
             <span class="ticket__flight-number">Номер рейса: ${ticket.flight_number}</span>
           </div>
+          <button data-id-favotite=${ticket.id} class="ticket__button ticket__button_green">add to favorites</button>
         </div>
     `;
 	}

@@ -1,6 +1,14 @@
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
 
+//Init dropdown
+const dropdown = document.querySelectorAll('.dropdown-trigger');
+M.Dropdown.init(dropdown, {
+	// coverTrigger: false,
+	constrainWidth: false,
+	closeOnClick: false,
+});
+
 //Init select
 const select = document.querySelectorAll('select');
 M.FormSelect.init(select);
@@ -11,13 +19,7 @@ export function getSelectInstance(element) {
 
 //Init Autocomplete
 const autocomplete = document.querySelectorAll('.autocomplete');
-M.Autocomplete.init(autocomplete, {
-	data: {
-		Apple: null,
-		Microsoft: null,
-		Google: 'https://placehold.it/250x250',
-	},
-});
+M.Autocomplete.init(autocomplete);
 
 export function getAutocompleteInstance(element) {
 	return M.Autocomplete.getInstance(element);

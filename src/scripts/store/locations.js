@@ -28,6 +28,7 @@ class Locations {
 	}
 
 	getCityCodeByKey(key) {
+		if (!key) return;
 		const city = Object.values(this.cities).find(item => item.full_name === key);
 		return city.code;
 	}
@@ -94,6 +95,7 @@ class Locations {
 		return Object.values(tickets).map(ticket => {
 			return {
 				...ticket,
+				id: Math.random().toString(16).slice(2, 7).toLowerCase(),
 				origin_name: this.getCityNameByCode(ticket.origin),
 				destination_name: this.getCityNameByCode(ticket.destination),
 				airline_logo: this.getAirlineLogoByCode(ticket.airline),

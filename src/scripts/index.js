@@ -4,6 +4,7 @@ import locations from './store/locations';
 import formUI from './views/form';
 import ticketsUI from './views/tickets';
 import currencyUI from './views/currency';
+import favoriteUI from './store/favorite';
 
 document.addEventListener('DOMContentLoaded', () => {
 	initApp();
@@ -14,6 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
 	form.addEventListener('submit', e => {
 		e.preventDefault();
 		onFormSubmit();
+	});
+
+	ticketsUI.container.addEventListener('click', e => {
+		if (e.target.classList.contains('ticket__button_green')) {
+			const idTicket = locations.lastSearch.filter(
+				ticket => ticket.id === e.target.dataset.idFavotite,
+			);
+			favoriteUI.renderTicketFavorite(idTicket);
+		}
+	});
+
+	favoriteUI.containerFavorite.addEventListener('click', e => {
+		if (e.target.classList.contains('ticket__button_red')) {
+			const parent = e.target.closest('.ticket');
+			favoriteUI.deleteFavoriteTicket(parent);
+		}
 	});
 
 	//Handlers
