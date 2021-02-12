@@ -1,0 +1,11 @@
+.dropdown-content {
+  overflow-y: hidden;
+  max-width: 600px !important;
+  height: auto !important;
+}
+
+.wrapper-favorite {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
