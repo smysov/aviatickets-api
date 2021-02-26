@@ -1,4 +1,4 @@
-import { formatDate } from '../helpers/date';
+import { formatDate } from '../date';
 
 describe('formateDate', () => {
   it('check format', () => {

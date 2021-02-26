@@ -10,6 +10,6 @@ module.exports = {
 		'.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
 		'^.+\\.(js|jsx)?$': 'babel-jest',
 	},
-	verbose: false, //Отключения подробной информации о тесте
+	// verbose: false, //Отключения подробной информации о тесте
 };
 

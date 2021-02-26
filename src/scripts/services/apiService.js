@@ -6,7 +6,7 @@ import config from '../config/apiConfig';
  * cities - array of the cities
  * prices/cheap - array of the prices
  */
-class Api {
+export class Api {
 	constructor(config) {
 		this.url = config.url;
 	}
