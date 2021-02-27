@@ -4,3 +4,5 @@ dist
 firebase.json
 .firebase
 coverage
+cypress
+cypress.json
