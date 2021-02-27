@@ -25,7 +25,7 @@
           </div>
 
         </div>
-        <div class="input-field">
+        <div class="input-field" data-hook="currency-select">
           <select id="currency">
             <option value="USD">$ US Dollar</option>
             <option value="EUR">€ Euro</option>
@@ -39,24 +39,24 @@
     <section class="search-tickets">
       <div class="container">
         <div class="form-wrapper">
-          <form class="form search" name="search">
+          <form class="form search" name="search" data-hook="main-form">
             <h2 class="form__title">Order ticket</h2>
             <div class="form__column">
               <div class="form__row">
                 <div class="input-field">
-                  <input type="text" id="autocomplete-origin" class="autocomplete">
+                  <input type="text" id="autocomplete-origin" class="autocomplete" data-hook="autocomplete-origin">
                   <label class="form__label" for="autocomplete-origin">Origin</label>
                 </div>
                 <div class="input-field">
-                  <input type="text" id="autocomplete-destination" class="autocomplete">
+                  <input type="text" id="autocomplete-destination" class="autocomplete" data-hook="autocomplete-destination">
                   <label class="form__label" for="autocomplete-destination">Destination</label>
                 </div>
-                <div class="input-field">
-                  <input type="text" class="datepicker" id="datepicker-depart">
+                <div class="input-field" data-hook="datepicker-depart-wrapper">
+                  <input type="text" class="datepicker" id="datepicker-depart" data-hook="datepicker-depart-input">
                   <label class="form__label" for="datepicker-depart">Depart date</label>
                 </div>
-                <div class="input-field">
-                  <input type="text" class="datepicker" id="datepicker-return">
+                <div class="input-field" data-hook="datepicker-return-wrapper">
+                  <input type="text" class="datepicker" id="datepicker-return" data-hook="datepicker-return-input">
                   <label class="form__label" for="datepicker-return">Return date</label>
                 </div>
                 <div class="form__buttons">

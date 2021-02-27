@@ -15,7 +15,8 @@
 		"stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json",
 		"test": "jest",
 		"test:watch": "jest --watch",
-		"test:coverage": "jest --coverage --colors"
+		"test:coverage": "jest --coverage --colors",
+		"cypress:open": "cypress open"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.10",
@@ -28,6 +29,7 @@
 		"copy-webpack-plugin": "^7.0.0",
 		"cross-env": "^7.0.3",
 		"css-loader": "^5.0.1",
+		"cypress": "^6.5.0",
 		"file-loader": "^6.2.0",
 		"html-webpack-plugin": "^4.5.1",
 		"jest": "^26.6.3",
